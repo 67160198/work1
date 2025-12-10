@@ -32,25 +32,27 @@ Shoppy เป็นเว็บไซต์ร้านค้าออนไล�
 
 ### 1. หน้าแรก (index.html)
 
-![alt text](/screenshots/index.jpg)
+![alt text](/image/index.png)
 
 ### 2. หน้าเกี่ยวกับ (about.html)
 
-![alt text](/screenshots/about%201.jpg)
-![alt text](/screenshots/about%202.jpg)
-![alt text](/screenshots/about%203.jpg)
+![alt text](/image/aboutimage.png)
 
 ### 3. หน้าบริการ (services.html)
 
-![alt text](/screenshots/services.jpg)
+![alt text](/image/service.png)
 
 ### 4. หน้าติดต่อ (contact.html)
 
-![alt text](/screenshots/contact%201.jpg)
-![alt text](/screenshots/contact%202.jpg)
+![alt text](/image/cont.png)
+
 
 ---
 
 ## ลิงก์ไปยังหน้าต่างๆ (Page Links)
 
 เพื่อความสะดวกในการเข้าถึงและทดสอบโครงสร้างเว็บไซต์:
+**หน้าแรก**  **[index.html](index.html)**       
+**เกี่ยวกับ**  **[about.html](about.html)**       
+**บริการ**   **[services.html](services.html)** 
+**ติดต่อ**    **[contact.html](contact.html)** 
