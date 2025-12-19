@@ -1,22 +1,37 @@
-/* ================================
-UNIVERSAL SELECTOR (*)
-================================ */
+/* ========================
+ RESET & DEFAULTS
+ ======================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Design tokens: color palette */
 :root {
-    --color-primary: #1428a0;
-    --color-secondary: #2c3c82;
-    --color-accent: #0099ff;
-    --color-neutral: #f5f5f5;
-    --overlay: rgb(0, 0, 0);
-    /* index layering tokens */
-    --z-header: 100;
-    --z-fixed: 50;
-    --z-content: 1;
+  --color-primary: #266fdb;
+  --color-secondary: #4397ff;
+  --color-accent: #ffffff;
+  --color-neutral: #3998f1;
+  --overlay: rgba(0, 0, 0, 0.45);
+
+  --z-header: 100;
+  --z-fixed: 50;
+  --z-content: 1;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #04b4fa;
+  background-color: var(--color-neutral);
+}
+
+/* Layout utility: centralized container for page widths */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* ================================
@@ -77,36 +92,35 @@ a:hover {
 /* ============
 Class Selectors
 =============*/
-=.hero {
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #ffffff;
-    background-size: cover;
-    background-position: center;
+.hero {
+  min-height: 70vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(135, 211, 255, 0.85)
+  );
 }
 
 .card {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    border: 1px solid rgb(0, 0, 0);
-    box-shadow: 0 6px 18px rgba(33, 47, 73, 0.08);
+  flex: 1 1 0;
+  min-width: 300px;
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(52, 201, 247, 0.06);
 }
 
-.btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #2981bb;
-    color: #ffffff;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.2s ease, transform 0.08s ease;
-    border: none;
-    cursor: auto;
-}
+
 
 .btn:hover,
 .btn:focus {
@@ -118,7 +132,56 @@ Class Selectors
     margin: 1rem 1rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
+
+/* ========================
+ RESPONSIVE / MEDIA QUERIES
+ ======================== */
+ @media (max-width: 660px) {
+  .card {
+    min-width: 100%;
+  }
+}
+/* Responsive embed wrapper for iframes (maps/videos) */
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f6f8fa;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* Responsive hero typography */
+.hero h1,
+.hero h2 {
+  margin: 0.25rem 0;
+}
+.hero h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.section {
+  margin: 1rem 0.5rem;
+}
 
 /* ========
 ID Selector
@@ -393,4 +456,80 @@ a,
 .chat-widget:hover {
   background: #0066ff;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.959);
+}
+
+
+/*Container Main Section*/
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main > section {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-card {
+  flex: 1 1 280px;
+  min-width: 220px;
+}
+
+/*The Button*/
+button,
+.btn {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  padding: 0.65rem 1.15rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  box-shadow: 0 8px 20px rgba(20, 40, 160, 0.12);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease,
+    background-color 0.18s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(20, 40, 160, 0.18);
+}
+
+button:active,
+.btn:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+button:focus,
+button:focus-visible,
+.btn:focus,
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(20, 40, 160, 0.12);
+}
+
+button[disabled],
+button:disabled,
+.btn[disabled],
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
