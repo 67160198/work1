@@ -50,13 +50,13 @@ p {
 }
 
 a {
-  color: #1428a0;
+  color: #edeff8;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #4c00ff; 
+  color: #8c5bff; 
   text-decoration: underline;
 }
 
@@ -83,7 +83,7 @@ Class Selectors
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgb(0, 0, 0);
   box-shadow: 0 6px 18px rgba(33, 47, 73, 0.08);
 }
 
@@ -91,7 +91,7 @@ Class Selectors
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #2241f7;
+  background-color: #2981bb;
   color: #ffffff;
   border-radius: 8px;
   text-decoration: none;
@@ -102,7 +102,7 @@ Class Selectors
 
 .btn:hover,
 .btn:focus {
-  background-color: #5e76ff;
+  background-color: #f1f1f1;
   transform: translateY(-1px);
 }
 
@@ -140,7 +140,7 @@ header nav ul {
 #footer {
   text-align: center;
   padding: 1.25rem 1rem;
-  background-color: #1428a0;
+  background-color: #1d9cf7;
   color: #ffffff;
 
   font-size: 0.95rem;
@@ -177,4 +177,59 @@ footer p {
   margin-top: 0.5rem;
   font-size: 0.9rem;
   color: #000000;
+}
+
+
+
+
+
+
+/* =========
+Pseudo-class
+==========*/
+
+header nav a:hover,
+header nav a:focus {
+  background-color: #e6eefc;
+  color: #0f1f7a;
+  border-radius: 6px;
+  transform: translateY(-1px);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d2d8fc;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(33, 47, 73, 0.12);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.service-container .services {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.service-container .services:nth-child(odd) {
+  background-color: #fbfdff;
+}
+
+.service-container .services:nth-child(even) {
+  background-color: transparent;
+}
+
+.service-container .services:first-child {
+  border-top: 2px solid rgb(248, 248, 248);
+}
+
+.service-container .services:last-child {
+  border-bottom: 2px solid rgb(238, 235, 235);
 }
