@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Shoppy</title>
-   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -16,16 +16,20 @@
     <!--navigation menu-->
     <nav>
       <ul>
-        <li><a href="index.html">หน้าแรก</a></li>
-        <li><a href="about.html">เกี่ยวกับ</a></li>
-        <li><a href="services.html">บริการ</a></li>
-        <li><a href="contact.html">ติดต่อ</a></li>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="btn">หน้าแรก</a></li>
+            <li><a href="about.html" class="btn">เกี่ยวกับ</a></li>
+            <li><a href="services.html" class="btn">บริการ</a></li>
+            <li><a href="contact.html" class="btn">ติดต่อ</a></li>
+          </ul>
+        </nav>
       </ul>
     </nav>
   </header>
   <main>
     <!--hero section-->
-    <section id="HeroSection">
+    <section class="hero">
       <h2>ยินดีต้อนรับเข้าสู่ Shoppy</h2>
       <p>
         แหล่งรวมสินค้าออนไลน์ครบวงจรเพื่อทุกไลฟ์สไตล์ของคุณค้นพบประสบการณ์การช้อปปิ้งรูปแบบใหม่ ที่สะดวก รวดเร็ว
@@ -40,7 +44,8 @@
       </p>
     </section>
     <!--featured services-->
-    <section id="featuredServices">
+     <section class="section">
+      <section class="card">
       <h2>บริการหลักของ Shoppy</h2>
       <div class="service-container">
         <article class="services">
@@ -67,6 +72,7 @@
           </p>
         </article>
       </div>
+      </section>
     </section>
   </main>
 
