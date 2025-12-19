@@ -233,3 +233,115 @@ header nav a:focus {
 .service-container .services:last-child {
   border-bottom: 2px solid rgb(238, 235, 235);
 }
+
+
+
+
+
+
+
+
+/* ================
+   Responsive Design
+   =============== */
+
+header img {
+  width: 400% !important;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+.service-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-container .services {
+  box-sizing: border-box;
+  width: 30%;
+  min-width: 210px;
+}
+
+a,
+.btn,
+.card {
+  transition: all 0.15s ease;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+
+  header {
+    padding: 1rem 1rem;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 1rem 0.6rem;
+  }
+
+  .service-container .services {
+    width: 46%;
+  }
+}
+
+@media (max-width: 220px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 1rem 0.75rem;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  header nav a,
+  .btn {
+    display: inline-block;
+    width: auto;
+    padding: 0.5rem 0.85rem;
+  }
+
+  footer nav {
+    gap: 0.4rem;
+  }
+
+  footer nav a {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .hero h2 {
+    font-size: clamp(1.25rem, 6vw, 2rem);
+  }
+
+  .service-container .services {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 13.6px;
+  }
+  .hero {
+    padding: 3rem 0.6rem;
+  }
+}
