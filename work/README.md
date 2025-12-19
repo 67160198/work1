@@ -23,7 +23,7 @@ Shoppy เป็นเว็บไซต์ร้านค้าออนไล�
 ## โครงสร้างไฟล์จริงของโปรเจค Shoppy
 
 
-![alt text](/image/project.png)
+![alt text](/work/image/project.png)
 ---
 
 ## รูปภาพหน้าจอเว็บไซต์ (Website Screenshots)
@@ -32,19 +32,19 @@ Shoppy เป็นเว็บไซต์ร้านค้าออนไล�
 
 ### 1. หน้าแรก (index.html)
 
-![alt text](/image/index.png)
+![alt text](/work/image/index.png)
 
 ### 2. หน้าเกี่ยวกับ (about.html)
 
-![alt text](/image/aboutimage.png)
+![alt text](/work/image/aboutimage.png)
 
 ### 3. หน้าบริการ (services.html)
 
-![alt text](/image/service.png)
+![alt text](/work/work/image/service.png)
 
 ### 4. หน้าติดต่อ (contact.html)
 
-![alt text](/image/cont.png)
+![alt text](/wrok/image/cont.png)
 
 
 ---
